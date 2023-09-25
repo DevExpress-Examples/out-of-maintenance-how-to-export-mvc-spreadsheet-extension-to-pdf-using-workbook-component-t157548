@@ -1,6 +1,0 @@
-@Html.DevExpress().Spreadsheet(settings => {
-    settings.Name = "Spreadsheet";
-    settings.CallbackRouteValues = new { Controller = "Home", Action = "SpreadsheetPartial" };
-    settings.DownloadRouteValues = new { Controller = "Home", Action = "SpreadsheetPartialDownload" };
-    settings.RibbonMode = SpreadsheetRibbonMode.Ribbon;
-}).Open(Server.MapPath(@"Documents\Sample.xlsx")).GetHtml()
